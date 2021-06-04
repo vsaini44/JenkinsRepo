@@ -1,0 +1,18 @@
+1) configure docker on jenkins master 
+apt install docker.io 
+usermod -aG docker jenkins 
+service jenkins restart 
+
+
+2) install plugins on jenkins
+docker
+docker-commons
+docker-pipeline
+cloudbees docker build and publish
+
+3) the git repo
+https://github.com/vsaini44/maven-hello-world
+
+4) configure the freestyle job for top level maven build 
+with pakacge goal and add additional build step to create
+ a docker image and publish it on dockerhub
